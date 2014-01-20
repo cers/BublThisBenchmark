@@ -24,6 +24,6 @@ set samples 5000,5000
 set object 1 rect from screen 0, 0, 0 to screen 1, 1, 0 behind
 set object 1 rect fc  rgb "white"  fillstyle solid 1.0
 set terminal svg size 1650,850 fname 'Verdana' fsize 10
-set output 'bublthis-plot.svg'
+set output 'plots/bublthis-plot.svg'
 
 plot 'data/bublthis-firefox.txt' using 1:($4/1000):3 with labels left offset 0.5,0.5 rotate by 45 notitle, '' using 1:($4/1000) with linespoints linestyle 1 title 'Firefox versions', 'data/bublthis-chrome.txt' using 1:($4/1000):6 with labels left offset 0.5,0.5 rotate by 45 notitle, '' using 1:($4/1000) with linespoints linestyle 2 title 'Chrome versions'
