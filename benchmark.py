@@ -4,9 +4,8 @@ import os
 import time
 import shutil
 
-fflist = []#glob.glob("/Users/Christian/Downloads/Firefox Installers/Unpacked/Firefox */Firefox.app/Contents/MacOS/firefox-bin")
-#chlist = glob.glob("/Users/Christian/Downloads/Chrome Installers/Unpacked/Chrom*/*Chrom*.app/Contents/MacOS/*Chrom*")
-chlist = glob.glob("/Users/Christian/Downloads/Chrome Installers/Unpacked/ChromiumOSX_[2-3]*/*Chrom*.app/Contents/MacOS/*Chrom*")
+fflist = glob.glob("/Users/Christian/Downloads/Firefox Installers/Unpacked/Firefox */Firefox.app/Contents/MacOS/firefox-bin")
+chlist = glob.glob("/Users/Christian/Downloads/Chrome Installers/Unpacked/Chrom*/*Chrom*.app/Contents/MacOS/*Chrom*")
 
 for browser in fflist+chlist:
 	print browser
